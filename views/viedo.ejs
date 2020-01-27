@@ -1,0 +1,11 @@
+ <style>
+ .col.s3 {
+    margin: 15px 15px auto;
+    display: inline-flex;
+}
+ </style>
+<% if (typeof alldata !== 'undefined'){alldata.forEach(function(element){%>
+  <div class="col s3">
+    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/<%=element.id.videoId%>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+          <% })} %>
